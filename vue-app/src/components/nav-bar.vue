@@ -42,18 +42,12 @@ export default {
       <div class="menu-list auth">
         <template v-if="!userInfo">
           <template v-for="provider in providers">
-            <a
-              :key="provider"
-              :href="`/.auth/login/${provider}?post_login_redirect_uri=https://purple-beach-044427803.azurestaticapps.net`"
-              >{{ provider }}</a
-            >
+            <a :key="provider" :href="`/.auth/login/${provider}`">{{
+              provider
+            }}</a>
           </template>
         </template>
-        <a
-          v-if="userInfo"
-          :href="`/.auth/logout?post_logout_redirect_uri=${redirect}`"
-          >Logout</a
-        >
+        <a v-if="userInfo" :href="`/.auth/logout`">Logout</a>
       </div>
     </nav>
     <div class="user" v-if="userInfo">
