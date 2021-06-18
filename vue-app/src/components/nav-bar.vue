@@ -44,7 +44,7 @@ export default {
           <template v-for="provider in providers">
             <a
               :key="provider"
-              :href="`/.auth/login/${provider}?post_login_redirect_uri=${redirect}`"
+              :href="`/.auth/login/azureActiveDirectory`"
               >{{ provider }}</a
             >
           </template>
