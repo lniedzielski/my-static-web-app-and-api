@@ -1,9 +1,16 @@
 {
+  "auth": {
+    "identityProviders": {
+      "azureActiveDirectory": {
+        "registration": {
+          "openIdIssuer": "https://login.microsoftonline.com/b41b72d0-4e9f-4c26-8a69-f949f367c91d",
+          "clientIdSettingName": "lukasz_app_secret",
+          "clientSecretSettingName": "r5x~n0hU9FZ7x.wQ0g_hydZmwjk~--6vxN"
+        }
+      }
+    }
+  },
   "routes": [
-    {
-      "route": "/.auth/login/github",
-      "statusCode": "404"
-    },
     {
       "route": "/api/products/*",
       "allowedRoles": [
