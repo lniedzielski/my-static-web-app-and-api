@@ -42,11 +42,9 @@ export default {
       <div class="menu-list auth">
         <template v-if="!userInfo">
           <template v-for="provider in providers">
-            <a
-              :key="provider"
-              :href="`/.auth/login/azureActiveDirectory`"
-              >{{ provider }}</a
-            >
+            <a :key="provider" :href="`/.auth/login/azureActiveDirectory`">{{
+              provider
+            }}</a>
           </template>
         </template>
         <a
