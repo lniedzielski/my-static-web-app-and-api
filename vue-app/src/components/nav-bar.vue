@@ -44,7 +44,7 @@ export default {
           <template v-for="provider in providers">
             <a
               :key="provider"
-              :href="`https://ambitious-moss-0b9080103.azurestaticapps.net/.auth/login/${provider}/callback`"
+              :href="`/.auth/login/aad`"
               >{{ provider }}</a
             >
           </template>
