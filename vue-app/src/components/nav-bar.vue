@@ -42,9 +42,11 @@ export default {
       <div class="menu-list auth">
         <template v-if="!userInfo">
           <template v-for="provider in providers">
-            <a :key="provider" :href="`https://purple-beach-044427803.azurestaticapps.net/.auth/login/${provider}/callback`">{{
-              provider
-            }}</a>
+            <a
+              :key="provider"
+              :href="`https://purple-beach-044427803.azurestaticapps.net/.auth/login/${provider}/callback`"
+              >{{ provider }}</a
+            >
           </template>
         </template>
         <a v-if="userInfo" :href="`/.auth/logout`">Logout</a>
